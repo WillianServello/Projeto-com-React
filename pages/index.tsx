@@ -6,6 +6,8 @@ import { GoGear } from "react-icons/go";
 
 import { FiShare2 } from "react-icons/fi";
 
+import { FiSmile } from "react-icons/fi";
+
 import { StyleSheet, Text, View } from "react-native";
 
 export default function Page(){
@@ -30,6 +32,19 @@ export default function Page(){
                 <Text style={styles.text}>Willian Rafael Servello da Silva</Text>
                 <Text style={styles.textNickName}>WillianServello ° he/him</Text>
             </View>
+
+            <View style={styles.caixaInput}>
+             
+                   
+                       
+                            <Text style={[styles.emojiColor, styles.configConfig]}>
+                                <FiSmile />
+                                Digite seu status
+                            </Text>
+                        
+                        
+                    
+            </View>
             
         </View>
     )
@@ -39,7 +54,7 @@ const styles = StyleSheet.create({
     background: {
         width: "100%",
         height: "100%",
-        backgroundColor: "black"
+        backgroundColor: "#191919"
     },
 
     textMargin: {
@@ -75,8 +90,33 @@ const styles = StyleSheet.create({
 
     body:{
         padding: 20
+    },
+
+    caixaInput: {
+        padding: 10,
+        justifyContent: "center",
+        borderRadius: 5,
+        marginTop: 15,
+        backgroundColor: "#333333",
+        width: "100%",
+        height: 38
+    },
+  
+    emojiColor: {
+        fontSize: 16,
+        color: "#a6a6a6",
+        gap: 5
+
+    },
+
+    alignText:{
+        
+        marginLeft: 10,
+    },
+
+    configConfig: {
+        display: "flex",
+        alignItems: "center"
     }
-
-
     
 })
