@@ -170,7 +170,7 @@ export default function Page(){
             </View>
                                                 {/* {height: isWeb ? "10%" : "15%"} DUAS FORMA DE FAZER ISSO QUE APRENDI */}
                                         {/*    se for true, a web usa 10% se não usa 15%    */}
-            <View style={[styles.bootomBar, isWeb ? { height: "10%" } : { height: "15%" }]}> 
+            <View style={[styles.bootomBar, isWeb ? { height: "13%" } : { height: "15%" }]}> 
                 <View style={{...styles.conteineriConeFoto, flexDirection: "column", alignItems: "center", gap: 10, marginTop: 15}}>
                     <View>
                         <Octicons name="home" size={24} color="white" />
